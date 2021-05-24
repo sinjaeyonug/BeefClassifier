@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015398619539",
+    "project_id": "beefclassifier",
+    "storage_bucket": "beefclassifier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015398619539:android:c62667e9c93a787cb2b066",
+        "android_client_info": {
+          "package_name": "com.example.beefclassifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015398619539-avt32jva96u5om1n6p49nj80vnjk598l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHxkuZRgLqtE-AYSxsnJu9uRrd-DNUxX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015398619539-avt32jva96u5om1n6p49nj80vnjk598l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

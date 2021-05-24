@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".WriteActivity">
+
+    <EditText
+        android:id="@+id/EditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#C86565"
+        app:layout_constraintStart_toStartOf="@+id/EditContent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditContent"
+        android:layout_width="256dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="내용"
+        android:inputType="textMultiLine|textPersonName"
+        android:scrollHorizontally="false"
+        android:textColor="#000000"
+        android:textColorHint="#C86565"
+        app:layout_constraintStart_toStartOf="@+id/AttachImage"
+        app:layout_constraintTop_toBottomOf="@+id/EditTitle" />
+
+    <Button
+        android:id="@+id/attachButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="100dp"
+        android:text="사진 첨부"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditContent" />
+
+    <Button
+        android:id="@+id/ConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="88dp"
+        android:text="등록"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attachButton" />
+
+    <Button
+        android:id="@+id/CancleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:text="취소"
+        app:layout_constraintStart_toEndOf="@+id/ConfirmButton"
+        app:layout_constraintTop_toBottomOf="@+id/attachButton" />
+
+    <ImageView
+        android:id="@+id/AttachImage"
+        android:layout_width="168dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditContent" />
+
+    <TextView
+        android:id="@+id/AttachText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#C86565"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/AttachImage"
+        app:layout_constraintTop_toBottomOf="@+id/EditContent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

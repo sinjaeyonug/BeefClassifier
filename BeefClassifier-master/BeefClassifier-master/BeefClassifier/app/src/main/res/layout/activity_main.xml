@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draw_layout"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#C86565"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/registertoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C86565"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="부위를 알려줘!"
+                android:textAllCaps="false"
+                android:textDirection="firstStrong"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="272dp"
+                tools:layout_editor_absoluteY="22dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/fragmentView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintTop_toBottomOf="@+id/registertoolbar"
+            tools:layout_editor_absoluteX="231dp">
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/naviheader"
+        app:itemTextAppearance="@style/MyItemFont"
+        app:menu="@menu/navigation_menu"></com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

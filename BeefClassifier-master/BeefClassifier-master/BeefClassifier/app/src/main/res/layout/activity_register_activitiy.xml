@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordcheckedt" />
+
+    <EditText
+        android:id="@+id/passwordcheckedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:textColor="#C86565"
+        android:textColorHint="#C86565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordedt" />
+
+    <EditText
+        android:id="@+id/emailedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#C86565"
+        android:textColorHint="#C86565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registertoolbar" />
+
+
+    <EditText
+        android:id="@+id/nameedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text"
+        android:textColor="#C86565"
+        android:textColorHint="#C86565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailedt" />
+
+    <EditText
+        android:id="@+id/Passwordedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#C86565"
+        android:textColorHint="#C86565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameedt" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C86565"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="가입 화면"
+            android:textAllCaps="false"
+            android:textDirection="firstStrong"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="272dp"
+            tools:layout_editor_absoluteY="22dp" />
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>
